@@ -32,16 +32,16 @@ Pon tu canción local en:
 
 La web ya trae el botón para prender/pausar Candy, control de volumen y efectos de sonido generados con JavaScript, sin backend ni build.
 
-## Publicar en GitHub Pages
+## Publicar en GitHub Pages (con Actions)
 
-1. Crea un repositorio en GitHub.
-2. Sube todos los archivos del proyecto.
-3. Ve a **Settings**.
-4. Entra a **Pages**.
-5. En **Branch**, selecciona `main`.
-6. En la carpeta, selecciona `/root`.
-7. Guarda los cambios.
-8. Abre la URL que te entregue GitHub Pages.
+Este repo ya incluye el workflow `.github/workflows/deploy-pages.yml` para publicar automáticamente en cada push a `main`.
+
+1. Sube todos los archivos del proyecto al repositorio (rama `main`).
+2. Ve a **Settings** → **Pages**.
+3. En **Build and deployment**, selecciona **Source: GitHub Actions**.
+4. Haz push a `main` (o ejecuta manualmente el workflow desde **Actions**).
+5. Espera que termine el job **Deploy static site to GitHub Pages**.
+6. Abre la URL: `https://TU-USUARIO.github.io/cumple-sisi/`.
 
 ## Estructura
 
