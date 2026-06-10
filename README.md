@@ -4,7 +4,7 @@ Landing one-page de cumpleaños, hecha con HTML + CSS + JavaScript puro y lista 
 
 ## Personalizar rápido
 
-Edita el objeto `birthdayConfig` al inicio de `/home/runner/work/cumple-sisi/cumple-sisi/MatiasHuentian/cumple-sisi/script.js` para cambiar:
+Edita el objeto `birthdayConfig` al inicio de `script.js` para cambiar:
 
 - `name`: nombre principal
 - `mainMessage`: mensaje grande
@@ -30,7 +30,7 @@ Pon tu canción local en:
 
 - `assets/audio/candy.mp3`
 
-La web ya trae el botón para prender/pausar Candy, control de volumen y efectos de sonido generados con JavaScript.
+La web ya trae el botón para prender/pausar Candy, control de volumen y efectos de sonido generados con JavaScript, sin backend ni build.
 
 ## Publicar en GitHub Pages
 

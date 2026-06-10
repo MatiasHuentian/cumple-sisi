@@ -90,6 +90,11 @@ function cacheRefs() {
   refs.cursorLayer = document.getElementById("cursorLayer");
   refs.balloonField = document.getElementById("balloonField");
   refs.galleryGrid = document.getElementById("galleryGrid");
+  refs.heroEyebrow = document.getElementById("heroEyebrow");
+  refs.heroLead = document.getElementById("heroLead");
+  refs.heroMainMessage = document.getElementById("heroMainMessage");
+  refs.heroName = document.getElementById("heroName");
+  refs.heroSubtitle = document.getElementById("heroSubtitle");
   refs.musicBtn = document.getElementById("musicBtn");
   refs.activateBtn = document.getElementById("activateBtn");
   refs.explodeBtn = document.getElementById("explodeBtn");
@@ -104,6 +109,8 @@ function cacheRefs() {
   refs.phraseCard = document.getElementById("phraseCard");
   refs.epicBtn = document.getElementById("epicBtn");
   refs.epicOverlay = document.getElementById("epicOverlay");
+  refs.epicTitle = document.getElementById("epicTitle");
+  refs.epicSubtitle = document.getElementById("epicSubtitle");
   refs.photoModal = document.getElementById("photoModal");
   refs.modalImage = document.getElementById("modalImage");
   refs.modalCaption = document.getElementById("modalCaption");
@@ -116,7 +123,19 @@ function applyConfig() {
     root.style.setProperty(`--${key}`, value);
   });
 
+  const [leadTextRaw, ...restMessage] = birthdayConfig.mainMessage.split(",");
+  const leadText = (leadTextRaw || "Feliz cumpleaños").trim();
+  const mainLine = (restMessage.join(",") || birthdayConfig.mainMessage).trim();
+
   document.title = `${birthdayConfig.name} | Cumpleaños.exe`;
+  refs.heroLead.textContent = leadText;
+  refs.heroMainMessage.textContent = mainLine;
+  refs.heroMainMessage.dataset.text = mainLine;
+  refs.heroName.textContent = birthdayConfig.name;
+  refs.heroSubtitle.textContent = birthdayConfig.subtitle;
+  refs.heroSubtitle.dataset.text = birthdayConfig.subtitle;
+  refs.epicTitle.textContent = `Feliz cumpleaños, ${birthdayConfig.name}`;
+  refs.epicSubtitle.textContent = birthdayConfig.subtitle;
   refs.audio.src = birthdayConfig.audio;
 }
 

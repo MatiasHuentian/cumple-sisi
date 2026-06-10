@@ -8,12 +8,6 @@
     name="description"
     content="Landing one-page de cumpleaños caótica, neon, chilena y lista para GitHub Pages."
   />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Mono+One&family=Space+Grotesk:wght@400;500;700&display=swap"
-    rel="stylesheet"
-  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -28,13 +22,13 @@
 
     <header class="hero chaotic-panel" id="hero">
       <div class="hero-copy">
-        <p class="eyebrow glitch" data-text="Cumpleaños.exe arrancando">Cumpleaños.exe arrancando</p>
+        <p class="eyebrow glitch" data-text="Cumpleaños.exe arrancando" id="heroEyebrow">Cumpleaños.exe arrancando</p>
         <h1 class="hero-title">
-          <span>Feliz cumpleaños</span>
-          <span class="glitch big-line" data-text="Huachua culia loca">Huachua culia loca</span>
-          <span class="hero-name">Constanza Vargas</span>
+          <span id="heroLead">Feliz cumpleaños</span>
+          <span class="glitch big-line" data-text="Huachua culia loca" id="heroMainMessage">Huachua culia loca</span>
+          <span class="hero-name" id="heroName">Constanza Vargas</span>
         </h1>
-        <p class="hero-subtitle glitch" data-text="Los choros no tosen y qué pasaaa!">
+        <p class="hero-subtitle glitch" data-text="Los choros no tosen y qué pasaaa!" id="heroSubtitle">
           Los choros no tosen y qué pasaaa!
         </p>
 
@@ -150,8 +144,8 @@
     <div class="epic-overlay" id="epicOverlay" aria-hidden="true">
       <div class="epic-content">
         <p class="epic-tag">Cumpleaños nivel dios</p>
-        <h2>Feliz cumpleaños, Constanza Vargas</h2>
-        <p>Los choros no tosen y qué pasaaa!</p>
+        <h2 id="epicTitle">Feliz cumpleaños, Constanza Vargas</h2>
+        <p id="epicSubtitle">Los choros no tosen y qué pasaaa!</p>
       </div>
     </div>
 
@@ -165,7 +159,6 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
