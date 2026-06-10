@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Constanza Vargas | Cumpleaños.exe</title>
+  <meta
+    name="description"
+    content="Landing one-page de cumpleaños caótica, neon, chilena y lista para GitHub Pages."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Mono+One&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="noise"></div>
+    <div class="gradient-backdrop"></div>
+    <div class="aurora aurora-a"></div>
+    <div class="aurora aurora-b"></div>
+    <div class="ambient-layer" id="ambientLayer" aria-hidden="true"></div>
+    <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+    <div class="cursor-layer" id="cursorLayer" aria-hidden="true"></div>
+
+    <header class="hero chaotic-panel" id="hero">
+      <div class="hero-copy">
+        <p class="eyebrow glitch" data-text="Cumpleaños.exe arrancando">Cumpleaños.exe arrancando</p>
+        <h1 class="hero-title">
+          <span>Feliz cumpleaños</span>
+          <span class="glitch big-line" data-text="Huachua culia loca">Huachua culia loca</span>
+          <span class="hero-name">Constanza Vargas</span>
+        </h1>
+        <p class="hero-subtitle glitch" data-text="Los choros no tosen y qué pasaaa!">
+          Los choros no tosen y qué pasaaa!
+        </p>
+
+        <div class="hero-badges" aria-label="badges decorativos">
+          <span class="badge">Cumpleaños.exe</span>
+          <span class="badge">Huachua mode: ON</span>
+          <span class="badge">Nivel: legendaria</span>
+          <span class="badge">Sistema saturado de cariño</span>
+          <span class="badge">Error 404: sobriedad no encontrada</span>
+        </div>
+
+        <div class="button-grid">
+          <button class="party-button primary" id="activateBtn">Activar cumpleaños</button>
+          <button class="party-button danger" id="explodeBtn">Reventar la página</button>
+          <button class="party-button secondary" id="musicBtn">Prender Candy</button>
+          <button class="party-button accent" id="raveBtn">Modo rave</button>
+        </div>
+
+        <div class="audio-dock chaotic-panel small-panel">
+          <div>
+            <p class="dock-title">Cabina del escándalo</p>
+            <p class="dock-status" id="audioStatus">Candy lista para prender cuando subas el mp3.</p>
+          </div>
+          <div class="audio-actions">
+            <button class="party-button mini" id="soundToggleBtn">Silenciar escándalo</button>
+            <label class="volume-control" for="volumeRange">
+              <span>Volumen</span>
+              <input id="volumeRange" type="range" min="0" max="1" step="0.05" value="0.7" />
+            </label>
+          </div>
+          <audio id="birthdayAudio" preload="none"></audio>
+        </div>
+      </div>
+
+      <div class="hero-windows" aria-hidden="true">
+        <article class="fake-window tilted-a">
+          <div class="window-bar">
+            <span></span><span></span><span></span>
+            <strong>fiesta.sys</strong>
+          </div>
+          <p>Wenaaaa</p>
+          <p>Se prendió esta cuestión</p>
+          <p>Nivel dios desbloqueado</p>
+        </article>
+        <article class="fake-window tilted-b">
+          <div class="window-bar">
+            <span></span><span></span><span></span>
+            <strong>caos.log</strong>
+          </div>
+          <p>&gt; los choros no tosen</p>
+          <p>&gt; huachua legendaria detectada</p>
+          <p>&gt; visual overload: true</p>
+        </article>
+        <div class="sticker sticker-star">Qué pasaaa</div>
+        <div class="sticker sticker-heart">La mismísima</div>
+        <div class="sticker sticker-burst">Modo huachua</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section chaotic-panel" id="globos">
+        <div class="section-heading">
+          <p class="section-kicker">Zona de globos</p>
+          <h2>Revienta globos y mira qué pasa</h2>
+          <p>Pop, confeti, frases chilenas y polaroids voladoras. Todo junto, como corresponde.</p>
+        </div>
+        <div class="balloon-field" id="balloonField" aria-live="polite"></div>
+      </section>
+
+      <section class="section chaotic-panel" id="galeria">
+        <div class="section-heading">
+          <p class="section-kicker">Galería de la cumpleañera</p>
+          <h2>Evidencia fotográfica de la huachua</h2>
+          <p>Solo se usan las 3 fotos reales configuradas. Nada de inventos raros.</p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </section>
+
+      <section class="section phrase-layout">
+        <article class="chaotic-panel phrase-machine">
+          <div class="section-heading compact">
+            <p class="section-kicker">Máquina de frases</p>
+            <h2>Tira una frase y prende más la cuestión</h2>
+          </div>
+          <div class="phrase-card" id="phraseCard">
+            <p class="phrase-output" id="phraseOutput">Hoy no se trabaja, hoy se celebra.</p>
+          </div>
+          <button class="party-button primary wide" id="phraseBtn">Tirar frase random</button>
+        </article>
+
+        <aside class="chaotic-panel rave-panel" id="ravePanel">
+          <div class="section-heading compact">
+            <p class="section-kicker">Modo rave</p>
+            <h2>Sube el neon y pierde la compostura</h2>
+          </div>
+          <p>
+            Activa luces de discoteca, más destellos, textos pulsando y globos con apuro existencial.
+          </p>
+          <button class="party-button accent wide" id="raveToggleAside">Activar modo rave</button>
+        </aside>
+      </section>
+
+      <section class="section chaotic-panel finale" id="finale">
+        <div class="section-heading">
+          <p class="section-kicker">Final épico</p>
+          <h2>Que este año venga lleno de historias, risas, copuchas, caos controlado y momentos bacanes.</h2>
+          <p>Cuando aprietes esto, la página se va al chancho con cariño.</p>
+        </div>
+        <button class="party-button primary huge" id="epicBtn">Lanzar final épico</button>
+      </section>
+    </main>
+
+    <div class="epic-overlay" id="epicOverlay" aria-hidden="true">
+      <div class="epic-content">
+        <p class="epic-tag">Cumpleaños nivel dios</p>
+        <h2>Feliz cumpleaños, Constanza Vargas</h2>
+        <p>Los choros no tosen y qué pasaaa!</p>
+      </div>
+    </div>
+
+    <div class="photo-modal" id="photoModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal="true"></div>
+      <div class="modal-card chaotic-panel">
+        <button class="modal-close" id="closeModalBtn" aria-label="Cerrar foto">✕</button>
+        <img id="modalImage" alt="Foto ampliada de Constanza Vargas" />
+        <p id="modalCaption"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
