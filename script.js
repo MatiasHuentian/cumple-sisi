@@ -1,13 +1,13 @@
 const birthdayConfig = {
   name: "Constanza Vargas",
-  mainMessage: "Feliz cumpleaños, Huachua culia loca",
+  mainMessage: "Feliz cumpleaños, HUACHA culia loca",
   subtitle: "Los choros no tosen y qué pasaaa!",
   photos: [
-    "assets/photos/foto1.jpg",
-    "assets/photos/foto2.jpg",
-    "assets/photos/foto3.jpg"
+    "assets/photos/foto1.png",
+    "assets/photos/foto2.png",
+    "assets/photos/foto3.png"
   ],
-  audio: "assets/audio/candy.mp3",
+  audio: "assets/audio/candy.m4a",
   colors: {
     primary: "#ff2bd6",
     secondary: "#00f5ff",
@@ -18,7 +18,7 @@ const birthdayConfig = {
   },
   clickPhrases: [
     "Wenaaaaa",
-    "Huachua modo legendaria",
+    "HUACHA modo legendaria",
     "Nivel desbloqueado",
     "Se prendió esta cuestión",
     "Cumpleaños con violencia visual",
@@ -32,7 +32,7 @@ const birthdayConfig = {
     "Hoy no se trabaja, hoy se celebra",
     "Cumpleaños nivel dios",
     "La Constanza desbloqueó otro año de caos",
-    "Modo huachua legendaria activado",
+    "Modo HUACHA legendaria activado",
     "Peligro: exceso de brillo y personalidad",
     "Esta página no tiene sentido, pero tiene cariño",
     "Los choros no tosen y los globos explotan",
@@ -58,14 +58,14 @@ const state = {
     "Wenaaaa",
     "La jefa del caos",
     "Qué pasaaa",
-    "Modo huachua",
+    "Modo HUACHA",
     "Nivel dios",
     "Se prendió esta cuestión"
   ],
   photoCaptions: [
     "La mismísima",
     "Constanza modo cumpleaños",
-    "Huachua legendaria"
+    "HUACHA legendaria"
   ]
 };
 
@@ -174,7 +174,7 @@ function setupAudio() {
     refs.audioStatus.textContent = "Candy en pausa, pero la energía sigue arriba.";
   });
   refs.audio.addEventListener("error", () => {
-    refs.audioStatus.textContent = "Falta el archivo assets/audio/candy.mp3. Súbelo y aprieta de nuevo.";
+    refs.audioStatus.textContent = "Falta el archivo assets/audio/candy.m4a. Súbelo y aprieta de nuevo.";
   });
   refs.volumeRange.addEventListener("input", () => {
     refs.audio.volume = Number(refs.volumeRange.value);
@@ -361,7 +361,7 @@ function toggleMusic() {
   }
 
   refs.audio.play().catch(() => {
-    refs.audioStatus.textContent = "Sube el mp3 en assets/audio/candy.mp3 para prender Candy sin drama.";
+    refs.audioStatus.textContent = "Sube el m4a en assets/audio/candy.m4a para prender Candy sin drama.";
   });
 }
 
@@ -433,7 +433,7 @@ function spawnCursorTrail(clientX, clientY, burst = false) {
     [...layer.children].slice(0, excess).forEach((node) => node.remove());
   }
 
-  const words = ["wena", "qué pasaaa", "huachua", "nivel dios"];
+  const words = ["wena", "qué pasaaa", "HUACHA", "nivel dios"];
   const glyphs = ["✦", "★", "♥", "✹"];
   const total = burst ? (reducedMotion ? 4 : 8) : (isMobile ? 1 : 2);
 
